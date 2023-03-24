@@ -56,11 +56,11 @@ Upon further consideration, our team performed a groupby analysis on the duratio
 
 * We added a new column called "CAUSE.CATEGORY" using one-hot encoding, as different categories of outage causes can have varying durations (for example, system operability disruption versus public appeal) and the latter category typically takes longer to restore. 
 
-  <iframe src="assets/cause_duration.html" width=400 height=300 frameBorder=0></iframe>
+  <iframe src="assets/cause_duration.html" width=800 height=600 frameBorder=0></iframe>
 
 * "U.S._STATE" column as a one-hot encoded feature to account for geographic information and the varying degrees of urban construction during prediction.
 
-  <iframe src="assets/state_duration.html" width=400 height=300 frameBorder=0></iframe>
+  <iframe src="assets/state_duration.html" width=800 height=600 frameBorder=0></iframe>
 
 * The "YEAR" column was also added as a categorical feature using OneHotEncoder to account for the progress in electricity network development over the years. Progressive social development leads to advancements in electricity network infrastructure, which can affect the outage duration time.
 
@@ -82,7 +82,7 @@ Upon further consideration, our team performed a groupby analysis on the duratio
   | Deg 8  | 2325.18 |
   | Deg 9  | 2267.11 |
 
-<iframe src="assets/no_outlier_RES_cust_plt.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/no_outlier_RES_cust_plt.html" width=800 height=600 frameBorder=0></iframe>
 
 *  Lastly, we choose to include the column IND.CUST.PCT(%), which the graph seems to be non-linear. According to the Tukley and Mosteller’s bulging rule, we use square root to our values on IND.CUST.PCT(%). The reson we include this feature is that the industrial places are likely to be a greater demand for electricity. If the power grid is not equipped to handle the demand, it can lead to strain on the system and potentially result in longer power outages.
 
